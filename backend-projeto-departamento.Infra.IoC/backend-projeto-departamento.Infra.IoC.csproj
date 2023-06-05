@@ -1,0 +1,22 @@
+﻿<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <TargetFramework>net6.0</TargetFramework>
+    <RootNamespace>backend_projeto_departamento.Infra.IoC</RootNamespace>
+    <ImplicitUsings>enable</ImplicitUsings>
+    <Nullable>enable</Nullable>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <PackageReference Include="AutoMapper.Extensions.Microsoft.DependencyInjection" Version="12.0.1" />
+    <PackageReference Include="MediatR" Version="12.0.1" />
+  </ItemGroup>
+
+
+  <ItemGroup>
+    <ProjectReference Include="..\backend-projeto-departamento.Application\backend-projeto-departamento.Application.csproj" />
+    <ProjectReference Include="..\backend-projeto-departamento.Domain\backend-projeto-departamento.Domain.csproj" />
+    <ProjectReference Include="..\backend-projeto-departamento.Infra.Data\backend-projeto-departamento.Infra.Data.csproj" />
+  </ItemGroup>
+
+</Project>
