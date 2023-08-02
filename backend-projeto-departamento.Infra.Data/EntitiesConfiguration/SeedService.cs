@@ -13,10 +13,6 @@ namespace backend_projeto_departamento.Infra.Data.EntitiesConfiguration
     {
         private ApplicationDbContext _context;
 
-        public SeedingService()
-        {
-        }
-
         public SeedingService(ApplicationDbContext context)
         {
             _context = context;
