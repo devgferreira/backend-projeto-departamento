@@ -1,5 +1,6 @@
 ﻿using backend_projeto_departamento.Application.DTOs;
 using backend_projeto_departamento.Application.Interface;
+using Microsoft.AspNetCore.Authorization;
 using Microsoft.AspNetCore.Mvc;
 
 namespace backend_projeto_departamento.Controllers
@@ -7,6 +8,7 @@ namespace backend_projeto_departamento.Controllers
 {
     [Route("api/[controller]")]
     [ApiController]
+    [Authorize]
     public class DepartamentoController : ControllerBase
     {
 
